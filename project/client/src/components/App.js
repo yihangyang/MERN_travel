@@ -2,9 +2,11 @@ import React, { Suspense } from 'react';
 import { Route, Switch } from "react-router-dom";
 import Auth from "../hoc/auth";
 // pages for this product
-import LandingPage from "./views/LandingPage/LandingPage.js";
-import LoginPage from "./views/LoginPage/LoginPage.js";
-import RegisterPage from "./views/RegisterPage/RegisterPage.js";
+import LandingPage from "./views/LandingPage/LandingPage"
+import LoginPage from "./views/LoginPage/LoginPage"
+import RegisterPage from "./views/RegisterPage/RegisterPage"
+import UploadPage from "./views/UploadPage/UploadPage"
+
 import NavBar from "./views/NavBar/NavBar";
 import Footer from "./views/Footer/Footer"
 
@@ -21,6 +23,7 @@ function App() {
           <Route exact path="/" component={Auth(LandingPage, null)} />
           <Route exact path="/login" component={Auth(LoginPage, false)} />
           <Route exact path="/register" component={Auth(RegisterPage, false)} />
+          <Route exact path="/product/upload" component={Auth(UploadPage, true)} />
         </Switch>
       </div>
       <Footer />
