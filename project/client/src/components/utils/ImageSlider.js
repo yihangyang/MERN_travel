@@ -8,7 +8,7 @@ function ImageSlider(props) {
         {
           props.images.map((image, idx) => (
             <div key={image + idx}>
-              <img style={{ width: '100%', maxHeight: '150px'}} src={`http://localhost:5000/${image}`} alt='productImage' />
+              <img style={{ width: '100%', maxHeight: '150px', minHeight: '150px'}} src={`http://localhost:5000/${image}`} alt='productImage' />
             </div>
           ))
         }

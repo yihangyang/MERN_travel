@@ -21,11 +21,11 @@ const Continent = [
 ]
 
 const Catogory = [
-  { value: 0, label: "Film & Animation" },
-  { value: 1, label: "Autos & Vehicles" },
-  { value: 2, label: "Music" },
-  { value: 3, label: "Pets & Animals" },
-  { value: 4, label: "Sports" },
+  { value: 0, label: "Beach" },
+  { value: 1, label: "Thinking" },
+  { value: 2, label: "Romantic" },
+  { value: 3, label: "Family" },
+  { value: 4, label: "Relax" },
 ]
 
 function UploadVideoPage(props) {
